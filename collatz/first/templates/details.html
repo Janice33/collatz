@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+</head>
+<body>
+<table cellspacing="20", cellpadding="1">
+    <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Steps</th>
+    </tr>
+    {% for a in object_var %}
+    <tr>
+        <td>{{a.name}} </td>
+        <td>{{a.no}} </td>
+        <td>{{a.steps}} </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<ol>
+    <li><a href="http://127.0.0.1:8000/details/">Numbers entered by other users</a></li>
+    <li><a href="http://127.0.0.1:8000/admin/">Admin Login</a></li>
+    <li><a href="http://127.0.0.1:8000/first/">Try a number</a></li>
+</ol>
+
+</body>
+</html>
+
+
